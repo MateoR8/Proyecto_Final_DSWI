@@ -1,0 +1,47 @@
+﻿@model Proyecto_Final_DSWI_Front.Models.Salas
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Salas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id_sala" class="control-label"></label>
+                <input asp-for="id_sala" class="form-control" />
+                <span asp-validation-for="id_sala" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cod_sala" class="control-label"></label>
+                <input asp-for="cod_sala" class="form-control" />
+                <span asp-validation-for="cod_sala" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="capacidad_sala" class="control-label"></label>
+                <input asp-for="capacidad_sala" class="form-control" />
+                <span asp-validation-for="capacidad_sala" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <h1>
+        @ViewBag.mensaje
+    </h1>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

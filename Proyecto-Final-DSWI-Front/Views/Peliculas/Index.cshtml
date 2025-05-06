@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Proyecto_Final_DSWI_Front.Models.Peliculas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+    @TempData["mensaje"]
+</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.director_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.genero_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duracion_minutos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idioma_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clasificacion_pelicula)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.director_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.genero_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duracion_minutos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idioma_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.clasificacion_pelicula)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_pelicula }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_pelicula })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Proyecto_Final_DSWI.Models.Funciones>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_funcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cod_sala)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre_pelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha_funcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hora_inicio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_funcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cod_sala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_pelicula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha_funcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hora_inicio)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_funcion}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_funcion })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

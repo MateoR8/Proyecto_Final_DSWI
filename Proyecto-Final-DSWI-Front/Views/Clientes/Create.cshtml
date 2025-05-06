@@ -1,0 +1,63 @@
+﻿@model Proyecto_Final_DSWI_Front.Models.Clientes
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Clientes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id_cliente" class="control-label"></label>
+                <input asp-for="id_cliente" class="form-control" />
+                <span asp-validation-for="id_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dni_cliente" class="control-label"></label>
+                <input asp-for="dni_cliente" class="form-control" />
+                <span asp-validation-for="dni_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombres_cliente" class="control-label"></label>
+                <input asp-for="nombres_cliente" class="form-control" />
+                <span asp-validation-for="nombres_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellido_pat_cliente" class="control-label"></label>
+                <input asp-for="apellido_pat_cliente" class="form-control" />
+                <span asp-validation-for="apellido_pat_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellido_mat_cliente" class="control-label"></label>
+                <input asp-for="apellido_mat_cliente" class="form-control" />
+                <span asp-validation-for="apellido_mat_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="num_celular_cliente" class="control-label"></label>
+                <input asp-for="num_celular_cliente" class="form-control" />
+                <span asp-validation-for="num_celular_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="correo_cliente" class="control-label"></label>
+                <input asp-for="correo_cliente" class="form-control" />
+                <span asp-validation-for="correo_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

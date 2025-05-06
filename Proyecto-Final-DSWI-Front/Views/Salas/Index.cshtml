@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Proyecto_Final_DSWI_Front.Models.Salas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+    @TempData["mensaje"]
+</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_sala)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cod_sala)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.capacidad_sala)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_sala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cod_sala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.capacidad_sala)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_sala }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id_sala }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_sala })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Proyecto_Final_DSWI_Front.Models.Reservas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reservas</h1>
+<form asp-action="Index" method="post" class="mb-4">
+    <div>
+        <label>Fecha de reserva</label>
+        <input type="date" name="fechaReserva" class="form-control" />
+    </div>
+    <div>
+        <label>Nombres del cliente</label>
+        <input type="text" name="nombresCliente" class="form-control" />
+    </div>
+    <div>
+        <label>Apellido paterno</label>
+        <input type="text" name="apePaterno" class="form-control" />
+    </div>
+    <div>
+        <label>Apellido materno</label>
+        <input type="text" name="apeMaterno" class="form-control" />
+    </div>
+    <div>
+        <label>Fecha de la función</label>
+        <input type="date" name="fechaFuncion" class="form-control" />
+    </div>
+    <div>
+        <label>Nombre de la película</label>
+        <input type="text" name="nombrePelicula" class="form-control" />
+    </div>
+    <div>
+        <label>Código de la sala</label>
+        <input type="text" name="codigoSala" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idReserva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaReserva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidoPatCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidoMatCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correoCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaFuncion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombrePelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.generoPelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clasifPelicula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sala)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.producto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idReserva)
+                </td>
+                <th>
+                    @Html.DisplayFor(modelItem => item.fechaReserva)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellidoPatCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellidoMatCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.correoCliente)
+                </td>
+                <th>
+                    @Html.DisplayFor(modelItem => item.fechaFuncion)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombrePelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.generoPelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clasifPelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sala)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.producto)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
