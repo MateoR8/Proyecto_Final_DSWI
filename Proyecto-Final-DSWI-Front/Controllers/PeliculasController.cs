@@ -3,30 +3,50 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Proyecto_Final_DSWI_Front.Models;
+using Proyecto_Final_DSWI_Front.Services;
 
 namespace Proyecto_Final_DSWI_Front.Controllers
 {
     public class PeliculasController : Controller
     {
         private readonly string urlBase = "https://localhost:7042/api/Pelicula/";
+        private readonly AuthService _authService;
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public PeliculasController(AuthService authService, IHttpClientFactory httpClientFactory)
+        {
+            _authService = authService;
+            _httpClientFactory = httpClientFactory;
+        }
 
         public async Task<IActionResult> Index()
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             List<Peliculas> temporal = new List<Peliculas>();
 
-            using (var client = new HttpClient())
-            {
+            var client = _httpClientFactory.CreateClient();
+            
                 client.BaseAddress = new Uri(urlBase);
                 HttpResponseMessage response = await client.GetAsync("listarPeliculas");
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 temporal = JsonConvert.DeserializeObject<List<Peliculas>>(apiResponse).ToList();
-            }
+            
 
             return View(await Task.Run(() => temporal));
         }
 
         public async Task<IActionResult> Create()
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             return View(await Task.Run(() => new Peliculas()));
         }
 
@@ -48,6 +68,12 @@ namespace Proyecto_Final_DSWI_Front.Controllers
 
         public async Task<IActionResult> Edit(string id)
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             if (string.IsNullOrEmpty(id)) return RedirectToAction("Index");
 
             Peliculas pelicula = new Peliculas();
@@ -80,6 +106,12 @@ namespace Proyecto_Final_DSWI_Front.Controllers
 
         public async Task<IActionResult> Delete(string id)
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             if (string.IsNullOrEmpty(id)) return RedirectToAction("Index");
 
             Peliculas pelicula = new Peliculas();

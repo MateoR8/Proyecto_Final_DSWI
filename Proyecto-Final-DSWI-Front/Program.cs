@@ -1,7 +1,13 @@
+using Proyecto_Final_DSWI_Front.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -15,6 +21,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseSession();
 
 app.UseRouting();
 

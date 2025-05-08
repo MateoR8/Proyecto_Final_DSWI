@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\",
+  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\user\\desktop\\dswi\\proyecto_final_dswi\\proyecto-final-dswi-front\\views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\mateo\\desktop\\cibertec - ciclo v\\desarrollo de servicios web i\\workspace - proyecto - final\\proyecto-final-dswi-front\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\user\\desktop\\dswi\\proyecto_final_dswi\\proyecto-final-dswi-front\\wwwroot\\css\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:wwwroot\\css\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\mateo\\desktop\\cibertec - ciclo v\\desarrollo de servicios web i\\workspace - proyecto - final\\proyecto-final-dswi-front\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\user\\desktop\\dswi\\proyecto_final_dswi\\proyecto-final-dswi-front\\wwwroot\\css\\dulceria.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:wwwroot\\css\\dulceria.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\user\\desktop\\dswi\\proyecto_final_dswi\\proyecto-final-dswi-front\\views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\mateo\\desktop\\cibertec - ciclo v\\desarrollo de servicios web i\\workspace - proyecto - final\\proyecto-final-dswi-front\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,70 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "create.css",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\wwwroot\\css\\create.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\create.css",
-              "ToolTip": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\wwwroot\\css\\create.css",
-              "RelativeToolTip": "wwwroot\\css\\create.css",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T00:45:15.591Z",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T04:29:26.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dulceria.css",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\wwwroot\\css\\Dulceria.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\Dulceria.css",
-              "ToolTip": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\wwwroot\\css\\Dulceria.css",
-              "RelativeToolTip": "wwwroot\\css\\Dulceria.css",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T00:42:53.991Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T04:25:24.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\Views\\Reservas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reservas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\Views\\Reservas\\Index.cshtml",
-              "RelativeToolTip": "Views\\Reservas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T00:34:22.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\Views\\Peliculas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Peliculas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\Views\\Peliculas\\Index.cshtml",
-              "RelativeToolTip": "Views\\Peliculas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T00:31:57.599Z",
+              "WhenOpened": "2025-05-08T04:25:20.126Z",
               "EditorCaption": ""
             }
           ]

@@ -4,24 +4,40 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using Proyecto_Final_DSWI.Models;
 using Proyecto_Final_DSWI_Front.Models;
+using Proyecto_Final_DSWI_Front.Services;
 
 namespace Proyecto_Final_DSWI_Front.Controllers
 {
     public class FuncionesController : Controller
     {
         private readonly string urlBase = "https://localhost:7042/api/Funcion/";
+        private readonly AuthService _authService;
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public FuncionesController(AuthService authService, IHttpClientFactory httpClientFactory)
+        {
+            _authService = authService;
+            _httpClientFactory = httpClientFactory;
+        }
+
 
         public async Task<IActionResult> Index()
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             List<Funciones> temporal = new List<Funciones>();
 
-            using (var client = new HttpClient())
-            {
+            var client = _httpClientFactory.CreateClient();
+            
                 client.BaseAddress = new Uri(urlBase);
                 HttpResponseMessage response = await client.GetAsync("listarFunciones");
                 string apiResponse = await response.Content.ReadAsStringAsync();
                 temporal = JsonConvert.DeserializeObject<List<Funciones>>(apiResponse).ToList();
-            }
+            
 
             return View(await Task.Run(() => temporal));
         }
@@ -56,6 +72,12 @@ namespace Proyecto_Final_DSWI_Front.Controllers
 
         public async Task<IActionResult> Create()
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             var peliculas = await listarPeliculas();
             var salas = await listarSalas();
 
@@ -83,6 +105,12 @@ namespace Proyecto_Final_DSWI_Front.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             if (id == null) return RedirectToAction("Index");
 
             Funciones funcion = new Funciones();
@@ -121,6 +149,12 @@ namespace Proyecto_Final_DSWI_Front.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
+            var token = _authService.GetToken();
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
             if (id == null) return RedirectToAction("Index");
 
             Funciones funcion = new Funciones();

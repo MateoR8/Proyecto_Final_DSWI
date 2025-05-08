@@ -3,6 +3,16 @@ wwwroot\css\Dulceria.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\font\Orbitron-Regular.ttf
+wwwroot\imgs\joker2.jpg
+wwwroot\imgs\mini1.jpg
+wwwroot\imgs\mini2.jpg
+wwwroot\imgs\mini3.jpg
+wwwroot\imgs\mini4.jpg
+wwwroot\imgs\mini5.jpg
+wwwroot\imgs\mini6.jpg
+wwwroot\imgs\robotsalvaje.jpg
+wwwroot\imgs\smile2.jpg
+wwwroot\imgs\venom.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

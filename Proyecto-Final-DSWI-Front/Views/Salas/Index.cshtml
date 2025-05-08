@@ -4,13 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-<div>
-    @TempData["Message"]
+<link href="@Url.Content("~/css/Dulceria.css")" rel="stylesheet" />
+
+<div class="header-bar">
+    <h1>SALAS</h1>
+    <a class="crear-btn" asp-action="Create">
+        Crear ⊕
+    </a>
 </div>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div>
+    @TempData["mensaje"]
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -27,23 +31,23 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id_sala)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cod_sala)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.capacidad_sala)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.id_sala }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.id_sala }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id_sala })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_sala)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cod_sala)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.capacidad_sala)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_sala }, new { @class = "edit-link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_sala }, new { @class = "delete-link" })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

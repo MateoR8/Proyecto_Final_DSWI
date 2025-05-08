@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto-Final-DSWI-Front")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bf7512d79196a2e694bf5b87737c26b77566548")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfe530f9b82b4e69a450897f533a18a9a708137b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto-Final-DSWI-Front")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto-Final-DSWI-Front")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
