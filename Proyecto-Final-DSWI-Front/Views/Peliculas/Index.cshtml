@@ -4,13 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<link href="@Url.Content("~/css/Dulceria.css")" rel="stylesheet" />
+
+<div class="header-bar">
+    <h1>PELÍCULAS</h1>
+    <a class="crear-btn" asp-action="Create">
+        Crear ⊕
+    </a>
+</div>
 <div>
     @TempData["mensaje"]
 </div>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -39,34 +43,35 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.director_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.genero_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.duracion_minutos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.idioma_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.clasificacion_pelicula)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.id_pelicula }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id_pelicula })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.director_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.genero_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.duracion_minutos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idioma_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clasificacion_pelicula)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_pelicula }, new { @class = "edit-link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_pelicula }, new { @class = "delete-link" })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -4,59 +4,77 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
 
-<h4>Clientes</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="id_cliente" class="control-label"></label>
-                <input asp-for="id_cliente" class="form-control" />
-                <span asp-validation-for="id_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="dni_cliente" class="control-label"></label>
-                <input asp-for="dni_cliente" class="form-control" />
-                <span asp-validation-for="dni_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="nombres_cliente" class="control-label"></label>
-                <input asp-for="nombres_cliente" class="form-control" />
-                <span asp-validation-for="nombres_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="apellido_pat_cliente" class="control-label"></label>
-                <input asp-for="apellido_pat_cliente" class="form-control" />
-                <span asp-validation-for="apellido_pat_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="apellido_mat_cliente" class="control-label"></label>
-                <input asp-for="apellido_mat_cliente" class="form-control" />
-                <span asp-validation-for="apellido_mat_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="num_celular_cliente" class="control-label"></label>
-                <input asp-for="num_celular_cliente" class="form-control" />
-                <span asp-validation-for="num_celular_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="correo_cliente" class="control-label"></label>
-                <input asp-for="correo_cliente" class="form-control" />
-                <span asp-validation-for="correo_cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<h1>Create</h1>
+<div class="in-flex" id="cont-login">
+    <div class="cont-form">
+        <div class="form-head">
+            <h4>Clientes</h4>
+        </div>
+        <hr />
+        <div class="form-body">
+
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex" hidden>
+                        <input asp-for="id_cliente" />
+                        <label asp-for="id_cliente"></label>
+                        <span asp-validation-for="id_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="dni_cliente" placeholder=" " />
+                        <label asp-for="dni_cliente"></label>
+                        <span asp-validation-for="dni_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="nombres_cliente" placeholder=" " />
+                        <label asp-for="nombres_cliente"></label>
+                        <span asp-validation-for="nombres_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="apellido_pat_cliente" placeholder=" " />
+                        <label asp-for="apellido_pat_cliente"></label>
+                        <span asp-validation-for="apellido_pat_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="apellido_mat_cliente" placeholder=" " />
+                        <label asp-for="apellido_mat_cliente"></label>
+                        <span asp-validation-for="apellido_mat_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="num_celular_cliente" placeholder=" " />
+                        <label asp-for="num_celular_cliente"></label>
+                        <span asp-validation-for="num_celular_cliente"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="correo_cliente" placeholder=" " />
+                        <label asp-for="correo_cliente"></label>
+                        <span asp-validation-for="correo_cliente"></span>
+                    </div>
+                </div>
+                <div class="cont-submit">
+                    <input type="submit" value="Create" />
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

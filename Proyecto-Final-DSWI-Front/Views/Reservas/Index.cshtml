@@ -4,7 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Reservas</h1>
+<link href="@Url.Content("~/css/Dulceria.css")" rel="stylesheet" />
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
+
+<div class="header-bar">
+    <h1>RESERVAS</h1>
+</div>
 <form asp-action="Index" method="post" class="mb-4">
     <div>
         <label>Fecha de reserva</label>
@@ -89,9 +94,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.idReserva)
                 </td>
-                <th>
+                <td>
                     @Html.DisplayFor(modelItem => item.fechaReserva)
-                </th>
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.nombreCliente)
                 </td>
@@ -104,9 +109,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.correoCliente)
                 </td>
-                <th>
+                <td>
                     @Html.DisplayFor(modelItem => item.fechaFuncion)
-                </th>
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.nombrePelicula)
                 </td>

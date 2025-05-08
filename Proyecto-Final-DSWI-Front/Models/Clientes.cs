@@ -25,7 +25,7 @@ namespace Proyecto_Final_DSWI_Front.Models
         [Display(Name = "Fecha de Nacimiento")]
         public DateOnly fecha_nac_cliente { get; set; }
 
-        [Display(Name = "Correo del Cliente")]
+        [Display(Name = "Correo")]
         public string correo_cliente { get; set; }
 
     }

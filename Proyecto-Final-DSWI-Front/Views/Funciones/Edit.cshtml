@@ -4,48 +4,61 @@
     ViewData["Title"] = "Edit";
 }
 
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
+
 <h1>Edit</h1>
+<div class="in-flex" id="cont-login">
+    <div class="cont-form">
+        <div class="form-head">
+            <h4>Funciones</h4>
+        </div>
+        <hr />
+        <div class="form-body">
 
-<h4>Funciones</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="id_funcion" class="control-label"></label>
-                <input asp-for="id_funcion" class="form-control" />
-                <span asp-validation-for="id_funcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="id_sala" class="control-label"></label>
-                <select asp-for="id_sala" asp-items="@ViewBag.salas" class="form-select"></select>
-                <span asp-validation-for="id_sala" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="id_pelicula" class="control-label"></label>
-                <select asp-for="id_pelicula" asp-items="@ViewBag.peliculas" class="form-select"></select>
-                <span asp-validation-for="id_pelicula" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="fecha_funcion" class="control-label"></label>
-                <input asp-for="fecha_funcion" class="form-control" />
-                <span asp-validation-for="fecha_funcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="hora_inicio" class="control-label"></label>
-                <input asp-for="hora_inicio" class="form-control" />
-                <span asp-validation-for="hora_inicio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex" hidden>
+                        <input asp-for="id_funcion" />
+                        <label asp-for="id_funcion"></label>
+                        <span asp-validation-for="id_funcion"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <label asp-for="id_sala"></label>
+                    <select asp-for="id_sala" asp-items="@ViewBag.salas">
+                        <option value="" disabled selected>Seleccione una sala</option>
+                    </select>
+                    <span asp-validation-for="id_sala" class="text-danger"></span>
+                </div>
+                <div class="sn-form in-flex">
+                    <label asp-for="id_pelicula"></label>
+                    <select asp-for="id_pelicula" asp-items="@ViewBag.peliculas">
+                        <option value="" disabled selected>Seleccione una película</option>
+                    </select>
+                    <span asp-validation-for="id_pelicula"></span>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="fecha_funcion" type="date" />
+                        <label asp-for="fecha_funcion"></label>
+                        <span asp-validation-for="fecha_funcion"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="hora_inicio" />
+                        <label asp-for="hora_inicio"></label>
+                        <span asp-validation-for="hora_inicio"></span>
+                    </div>
+                </div>
+                <div class="cont-submit">
+                    <input type="submit" value="Save" />
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

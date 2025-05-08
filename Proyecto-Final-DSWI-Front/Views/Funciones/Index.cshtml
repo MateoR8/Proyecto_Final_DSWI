@@ -4,11 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<link href="@Url.Content("~/css/Dulceria.css")" rel="stylesheet" />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="header-bar">
+    <h1>FUNCIONES</h1>
+    <a class="crear-btn" asp-action="Create">
+        Crear ⊕
+    </a>
+</div>
+<div>
+    @TempData["mensaje"]
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -31,28 +37,29 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id_funcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cod_sala)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre_pelicula)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.fecha_funcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.hora_inicio)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.id_funcion}) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.id_funcion })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_funcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cod_sala)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre_pelicula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fecha_funcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hora_inicio)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_funcion }, new { @class = "edit-link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_funcion }, new { @class = "delete-link" })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

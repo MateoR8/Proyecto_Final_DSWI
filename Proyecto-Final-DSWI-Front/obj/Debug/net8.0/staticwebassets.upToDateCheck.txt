@@ -1,5 +1,8 @@
+wwwroot\css\create.css
+wwwroot\css\Dulceria.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\font\Orbitron-Regular.ttf
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

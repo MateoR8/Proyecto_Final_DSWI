@@ -4,43 +4,53 @@
     ViewData["Title"] = "Edit";
 }
 
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
+
 <h1>Edit</h1>
-
-<h4>Dulceria</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="id_producto" class="control-label"></label>
-                <input asp-for="id_producto" class="form-control" />
-                <span asp-validation-for="id_producto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="nombre_producto" class="control-label"></label>
-                <input asp-for="nombre_producto" class="form-control" />
-                <span asp-validation-for="nombre_producto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="precio_producto" class="control-label"></label>
-                <input asp-for="precio_producto" class="form-control" />
-                <span asp-validation-for="precio_producto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="marca_producto" class="control-label"></label>
-                <input asp-for="marca_producto" class="form-control" />
-                <span asp-validation-for="marca_producto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="in-flex" id="cont-login">
+    <div class="cont-form">
+        <div class="form-head">
+            <h4>Dulcería</h4>
+        </div>
+        <hr />
+        <div class="form-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex" hidden>
+                        <input asp-for="id_producto" />
+                        <label asp-for="id_producto"></label>
+                        <span asp-validation-for="id_producto"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="nombre_producto" placeholder=" " />
+                        <label asp-for="nombre_producto"></label>
+                        <span asp-validation-for="nombre_producto"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="precio_producto" placeholder=" " />
+                        <label asp-for="precio_producto"></label>
+                        <span asp-validation-for="precio_producto"></span>
+                    </div>
+                </div>
+                <div class="sn-form in-flex">
+                    <div class="item in-flex">
+                        <input asp-for="marca_producto" placeholder=" " />
+                        <label asp-for="marca_producto"></label>
+                        <span asp-validation-for="marca_producto"></span>
+                    </div>
+                </div>
+                <div class="cont-submit">
+                    <input type="submit" value="Save" />
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

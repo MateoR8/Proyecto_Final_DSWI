@@ -4,35 +4,45 @@
     ViewData["Title"] = "Delete";
 }
 
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
+
 <h1>Delete</h1>
-
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Salas</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.id_sala)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.id_sala)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.cod_sala)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.cod_sala)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.capacidad_sala)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.capacidad_sala)
-        </dd>
-    </dl>
-
-    <form asp-action="Delete">
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+<div class="in-flex" id="cont-login">
+    <div class="cont-form">
+        <div class="form-head">
+            <h3>¿Estás seguro de que desear eliminar esta sala?</h3>
+        </div>
+        <br />
+        <div class="form-body">
+            <hr />
+            <dl class="row">
+                <dt>
+                    @Html.DisplayNameFor(model => model.id_sala)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.id_sala)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.cod_sala)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.cod_sala)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.capacidad_sala)
+                </dt>
+                    <dd>
+                    @Html.DisplayFor(model => model.capacidad_sala)
+                </dd>
+                </div>
+                    <form asp-action="Delete" class="cont-submit">
+                        <input type="hidden" asp-for="id_sala" />
+                        <input type="submit" value="Delete" /> 
+                        <a asp-action="Index">Back to List</a>
+                    </form>
+                </div>
+            </dl>
+        </div>
+    </div>
 </div>
+

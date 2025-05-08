@@ -1,14 +1,19 @@
 ﻿@model IEnumerable<Proyecto_Final_DSWI_Front.Models.Dulceria>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listado de Dulceria";
 }
+<link href="@Url.Content("~/css/Dulceria.css")" rel="stylesheet" />
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="header-bar">
+    <h1>DULCERIA</h1>
+    <a class="crear-btn" asp-action="Create">
+        Crear ⊕
+    </a>
+</div>
+<div>
+    @TempData["Message"]
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -28,25 +33,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id_producto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre_producto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.precio_producto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.marca_producto)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.id_producto}) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id_producto })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_producto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre_producto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precio_producto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.marca_producto)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_producto }, new { @class = "edit-link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_producto }, new { @class = "delete-link" })
+
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

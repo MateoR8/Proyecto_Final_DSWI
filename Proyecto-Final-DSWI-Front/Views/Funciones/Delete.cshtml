@@ -4,48 +4,57 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<link href="@Url.Content("~/css/create.css")" rel="stylesheet" />
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Funciones</h4>
-    <hr />
-    <form asp-action="Delete">
-    <dl class="row">
-        <input type="hidden" asp-for="id_funcion"/>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.id_funcion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.id_funcion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.cod_sala)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.cod_sala)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.nombre_pelicula)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.nombre_pelicula)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.fecha_funcion)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.fecha_funcion)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.hora_inicio)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.hora_inicio)
-        </dd>
+<h1>Delete</h1>
+<div class="in-flex" id="cont-login">
+    <div class="cont-form">
+        <div class="form-head">
+            <h3>¿Estás seguro de que desear eliminar esta función?</h3>
+        </div>
+        <br />
+        <div class="form-body">
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.id_funcion)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.id_funcion)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.cod_sala)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.cod_sala)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.nombre_pelicula)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.nombre_pelicula)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.fecha_funcion)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.fecha_funcion)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.hora_inicio)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.hora_inicio)
+                </dd>
+            </dl>
+        </div>
+        <form asp-action="Delete" class="cont-submit">
+            <input type="hidden" asp-for="id_funcion" />
+            <input type="submit" value="Delete" />
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </div>
     </dl>
-    
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+</div>
+    </div>
 </div>

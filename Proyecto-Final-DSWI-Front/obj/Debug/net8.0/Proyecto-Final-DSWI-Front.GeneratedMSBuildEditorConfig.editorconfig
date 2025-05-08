@@ -17,125 +17,125 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Proyecto_Final_DSWI_Front
 build_property.RootNamespace = Proyecto_Final_DSWI_Front
-build_property.ProjectDir = C:\Users\mateo\Desktop\Cibertec - Ciclo V\Desarrollo de Servicios Web I\WorkSpace - Proyecto - Final\Proyecto-Final-DSWI-Front\
+build_property.ProjectDir = C:\Users\user\Desktop\DSWI\Proyecto_Final_DSWI\Proyecto-Final-DSWI-Front\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mateo\Desktop\Cibertec - Ciclo V\Desarrollo de Servicios Web I\WorkSpace - Proyecto - Final\Proyecto-Final-DSWI-Front
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\DSWI\Proyecto_Final_DSWI\Proyecto-Final-DSWI-Front
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Clientes/Create.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Clientes/Delete.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Clientes/Edit.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Clientes/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Dulceria/Create.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Dulceria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVsY2VyaWFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Dulceria/Delete.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Dulceria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVsY2VyaWFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Dulceria/Edit.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Dulceria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVsY2VyaWFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Dulceria/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Dulceria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVsY2VyaWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Funciones/Create.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Funciones/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Funciones/Delete.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Funciones/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Funciones/Edit.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Funciones/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Funciones/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Funciones/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Home/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Home/Privacy.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Peliculas/Create.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Peliculas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Peliculas/Delete.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Peliculas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Peliculas/Edit.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Peliculas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Peliculas/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Peliculas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVsaWN1bGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Reservas/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Reservas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Salas/Create.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Salas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Salas/Delete.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Salas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Salas/Edit.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Salas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Salas/Index.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Salas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Shared/Error.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mateo/Desktop/Cibertec - Ciclo V/Desarrollo de Servicios Web I/WorkSpace - Proyecto - Final/Proyecto-Final-DSWI-Front/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/DSWI/Proyecto_Final_DSWI/Proyecto-Final-DSWI-Front/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3mrwwxm2t3

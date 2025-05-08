@@ -31,14 +31,15 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Salas sal)
         {
+            string mensaje = "";
             using (var client = new HttpClient())
             {
                 StringContent content = new StringContent(JsonConvert.SerializeObject(sal), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(urlBase + "agregarSala", content);
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
 
@@ -61,14 +62,15 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Salas sal)
         {
+            string mensaje = "";
             using (var client = new HttpClient())
             {
                 StringContent content = new StringContent(JsonConvert.SerializeObject(sal), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(urlBase + "actualizarSala", content);
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
 
@@ -91,13 +93,14 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
+            string mensaje = "";
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response = await client.DeleteAsync(urlBase + $"eliminarSala?id={id}");
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
 

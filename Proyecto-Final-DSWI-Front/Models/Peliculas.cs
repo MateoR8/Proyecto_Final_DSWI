@@ -7,22 +7,22 @@ namespace Proyecto_Final_DSWI_Front.Models
         [Display(Name = "Id Pelicula")]
         public int id_pelicula { get; set; }
 
-        [Display(Name = "Nombre Pelicula")]
+        [Display(Name = "Nombre  de la película")]
         public string nombre_pelicula { get; set; }
 
-        [Display(Name = "Director de la Pelicula")]
+        [Display(Name = "Director de la película")]
         public string director_pelicula { get; set; }
 
-        [Display(Name = "Genero Pelicula")]
+        [Display(Name = "Género")]
         public string genero_pelicula { get; set; }
 
-        [Display(Name = "Duracion")]
+        [Display(Name = "Duración")]
         public int duracion_minutos { get; set; }
 
         [Display(Name = "Idioma")]
         public string idioma_pelicula { get; set; }
 
-        [Display(Name = "Clasificacion")]
+        [Display(Name = "Clasificación")]
         public string clasificacion_pelicula { get; set; }
     }
 }

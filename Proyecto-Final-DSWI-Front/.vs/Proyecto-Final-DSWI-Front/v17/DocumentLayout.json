@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|c:\\users\\mateo\\desktop\\cibertec - ciclo v\\desarrollo de servicios web i\\workspace - proyecto - final\\proyecto-final-dswi-front\\views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5A4D86BB-3D53-4C98-9FF1-C8919524405C}|Proyecto-Final-DSWI-Front.csproj|solutionrelative:views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\DSWI\\Proyecto_Final_DSWI\\Proyecto-Final-DSWI-Front\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Reservas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reservas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Cibertec - Ciclo V\\Desarrollo de Servicios Web I\\WorkSpace - Proyecto - Final\\Proyecto-Final-DSWI-Front\\Views\\Reservas\\Index.cshtml",
-              "RelativeToolTip": "Views\\Reservas\\Index.cshtml",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAAAG8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T04:52:37.019Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

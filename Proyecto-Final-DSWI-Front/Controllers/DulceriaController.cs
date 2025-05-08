@@ -37,6 +37,7 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Dulceria prod)
         {
+            string mensaje = "";
             var handler = new HttpClientHandler
             {
                 ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
@@ -47,9 +48,9 @@ namespace Proyecto_Final_DSWI_Front.Controllers
                 StringContent content = new StringContent(JsonConvert.SerializeObject(prod), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(urlBase + "agregarProducto", content);
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
 
@@ -78,6 +79,7 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Dulceria prod)
         {
+            string mensaje = "";
             var handler = new HttpClientHandler
             {
                 ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
@@ -88,9 +90,9 @@ namespace Proyecto_Final_DSWI_Front.Controllers
                 StringContent content = new StringContent(JsonConvert.SerializeObject(prod), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(urlBase + "actualizarProducto", content);
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
 
@@ -119,6 +121,7 @@ namespace Proyecto_Final_DSWI_Front.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
+            string mensaje = "";
             var handler = new HttpClientHandler
             {
                 ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
@@ -128,9 +131,9 @@ namespace Proyecto_Final_DSWI_Front.Controllers
             {
                 HttpResponseMessage response = await client.DeleteAsync(urlBase + $"eliminarProducto?id={id}");
                 string apiResponse = await response.Content.ReadAsStringAsync();
-                TempData["Message"] = apiResponse;
+                mensaje = apiResponse;
             }
-
+            TempData["Message"] = mensaje;
             return RedirectToAction("Index");
         }
     }
