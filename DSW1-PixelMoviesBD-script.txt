@@ -396,7 +396,7 @@ GO
 -- CRUD FUNCIONES
 
 -- LISTADO
-Alter PROCEDURE sp_Listar_Funciones
+CREATE PROCEDURE sp_Listar_Funciones
 AS
 BEGIN
     SELECT 
@@ -539,3 +539,27 @@ Begin
 End
 Go
 
+-- Creacion de tablas y sp para JWT
+
+Create table Administrador(
+	idAdmin int IDENTITY(1,1) PRIMARY KEY,
+	nombre varchar(200),
+	apellidos varchar(200),
+	email varchar(200),
+	nombreUsuario varchar(200),
+	contrasenia varchar(200)
+);
+Go
+
+insert into Administrador Values ('Mateo', 'Regalado', 'mateoquispe@hotmail.com', 'mate', 'mate');
+Go
+
+Create Procedure sp_login
+  @usuario NVARCHAR(200),
+  @contrasenia NVARCHAR(200)
+AS
+BEGIN
+  SET NOCOUNT ON;
+  SELECT idAdmin, nombre, apellidos, email, nombreUsuario from Administrador where nombreUsuario = @usuario and contrasenia = @contrasenia
+END
+Go
